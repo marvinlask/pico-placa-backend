@@ -1,4 +1,3 @@
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
@@ -57,7 +56,7 @@ bot.on("callback_query", async query => {
   bot.answerCallbackQuery(query.id, { text: "Mensaje enviado al cliente ✅" });
 });
 
-// Iniciar servidor (opcional)
+// Iniciar servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor backend corriendo en puerto ${PORT}`);
