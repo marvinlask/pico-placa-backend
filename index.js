@@ -8,13 +8,13 @@ const app = express();
 app.use(bodyParser.json());
 
 // 🔐 Reemplaza con tu token real
-const TELEGRAM_TOKEN = "TU_TELEGRAM_BOT_TOKEN";
+const TELEGRAM_TOKEN = "7098769612:AAHUsgyszgPkoRVzCFDZDu5-YVttL5TWx5w";
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
 // 🔐 Reemplaza con tu configuración real de Firebase
 admin.initializeApp({
   credential: admin.credential.applicationDefault(),
-  databaseURL: "https://pico-y-placa-69eec-default-rtdb.firebaseio.com/"
+  databaseURL: "https://console.firebase.google.com/u/0/project/pico-y-placa-69eec/database/pico-y-placa-69eec-default-rtdb/data/~2F"
 });
 
 const db = admin.database();
